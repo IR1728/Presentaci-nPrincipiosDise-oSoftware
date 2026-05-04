@@ -1,16 +1,32 @@
-Se implementan los patrones singleton y prototype como patrones creacionales y strategy como patrón de comportamiento.
-De momento,su ejecución se planea hacer solamente en el SO fedora en su versión 43 con el gestor de ventanas lxqt 
-con las dependencias de clang versión 21 mediante el siguiente comando:
-sudo dnf install clang clang-tools-extra gcc-objc \ gnustep-make gnustep-base-devel libobjc
-cargar las rutas
-source /usr/lib64/GNUstep/Makefiles/GNUstep.sh
-export RPM_ARCH=x86_6
+# Objective-C Design Patterns (Fedora 43)
 
-      make
-    El binario se genera dentro de una carpeta llamada `obj/`.
-    bash
-    
-La versión del lenguaje y framework utiizados fueron
-Objective-C 2.0 
-Clang 21.1+ / GCC 15.2
+Este proyecto implementa diversos patrones de diseño utilizando **Objective-C** sobre el ecosistema **GNUstep**, optimizado para el entorno Fedora.
 
+##  Patrones Implementados
+
+El proyecto demuestra la aplicación práctica de los siguientes patrones de diseño:
+
+*   **Patrones Creacionales:**
+    *   `Singleton`: Garantiza una instancia única de una clase.
+    *   `Prototype`: Permite la clonación de objetos existentes.
+*   **Patrón de Comportamiento:**
+    *   `Strategy`: Facilita el intercambio de algoritmos en tiempo de ejecución.
+
+---
+
+##  Entorno de Desarrollo
+
+La ejecución y desarrollo están validados para el siguiente entorno técnico:
+
+*   **Sistema Operativo:** Fedora 43 con gestor de ventanas **LXQt**.
+*   **Lenguaje:** Objective-C 2.0.
+*   **Compiladores:** Clang 21.1+ y GCC 15.2.
+*   **Framework:** GNUstep Foundation.
+
+---
+
+##  Instalación de Dependencias
+
+Para preparar el sistema, es necesario instalar el toolchain de Clang y las librerías de desarrollo de GNUstep mediante el siguiente comando:
+```bash
+sudo dnf install clang clang-tools-extra gcc-objc gnustep-make gnustep-base-devel libobjc
