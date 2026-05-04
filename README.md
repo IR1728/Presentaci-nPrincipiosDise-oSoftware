@@ -14,9 +14,8 @@ El proyecto demuestra la aplicación práctica de los siguientes patrones de dis
 
 ---
 
-##  Entorno de Desarrollo
-
-La ejecución y desarrollo están validados para el siguiente entorno técnico:
+##  Entorno de Desarrollo y Ejecución
+Debido a cuestiones de tiempo  y practicidad la ejecución y desarrollo se implementarán en el siguiente entorno(sin descartar la posibilidad de empliación a futuro) :
 
 *   **Sistema Operativo:** Fedora 43 con gestor de ventanas **LXQt**.
 *   **Lenguaje:** Objective-C 2.0.
