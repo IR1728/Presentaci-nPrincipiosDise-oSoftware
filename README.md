@@ -1,6 +1,6 @@
-# Objective-C Design Patterns (Fedora 43)
+# Presentación de patrones de diseño
 
-Este proyecto implementa diversos patrones de diseño utilizando **Objective-C** sobre el ecosistema **GNUstep**, optimizado para el entorno Fedora.
+Este proyecto implementa diversos patrones de diseño utilizando **Objective-C** sobre el ecosistema **GNUstep**
 
 ##  Patrones Implementados
 
@@ -28,5 +28,4 @@ La ejecución y desarrollo están validados para el siguiente entorno técnico:
 ##  Instalación de Dependencias
 
 Para preparar el sistema, es necesario instalar el toolchain de Clang y las librerías de desarrollo de GNUstep mediante el siguiente comando:
-```bash
 sudo dnf install clang clang-tools-extra gcc-objc gnustep-make gnustep-base-devel libobjc
