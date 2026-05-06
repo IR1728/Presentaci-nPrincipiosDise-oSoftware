@@ -1,0 +1,7 @@
+CompileFlags:
+  Add: 
+    - -I/usr/lib/gcc/x86_64-redhat-linux/15/include
+    - -I/usr/include/GNUstep
+    - -I/usr/lib64/GNUstep/Headers
+    - -fobjc-arc
+    - -Dgnustep_base_library=1

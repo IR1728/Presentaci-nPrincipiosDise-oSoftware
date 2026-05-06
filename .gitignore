@@ -1,3 +1,28 @@
 .vscode/
 *.exe
 *.zip
+
+# Compilación y Ejecutables
+AppStrategy
+StrategyApp
+*.o
+*.out
+
+# Archivos de Sistema
+.DS_Store
+Thumbs.db
+
+# Temporales de Editores
+*.swp
+*.swo
+.idea/
+
+# Archivos de LaTeX y logs
+*.aux
+*.log
+*.toc
+*.pdf
+*.tex
+
+# Archivos de Enterprise Architect
+*.ldb
