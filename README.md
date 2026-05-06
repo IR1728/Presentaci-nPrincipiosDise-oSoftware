@@ -27,4 +27,5 @@ Debido a cuestiones de tiempo  y practicidad la ejecución y desarrollo se imple
 ##  Instalación de Dependencias
 
 Para preparar el sistema, es necesario instalar el toolchain de Clang y las librerías de desarrollo de GNUstep mediante el siguiente comando:
-sudo dnf install clang clang-tools-extra gcc-objc gnustep-make gnustep-base-devel libobjc
+```bash
+bash $ sudo dnf install clang clang-tools-extra gcc-objc gnustep-make gnustep-base-devel libobjc
