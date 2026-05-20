@@ -17,10 +17,10 @@ El proyecto demuestra la aplicación práctica de los siguientes patrones de dis
 ## Problema que resuelve cada ejemplo
 
 ### Singleton — Inventario de pizzería
-Una pizzería necesita un único registro de inventario compartido entre todos los módulos del sistema (proveedores, cocina, ventas). Sin Singleton, cada parte del código crearía su propio `Inventario`, resultando en datos inconsistentes. La clase `Inventario` expone el método de clase `+getInstancia` que siempre devuelve la misma instancia, garantizando coherencia en todo el programa.
+Una pizzería necesita un único registro de inventario compartido entre todos los módulos del sistema (proveedores, cocina, ventas). Sin Singleton, cada parte del código crearía su propio `Inventario`, resultando en datos inconsistentes. La clase `Inventario` expone el método de clase `getInstancia` que siempre devuelve la misma instancia, garantizando coherencia en todo el programa.
 
 ### Prototype — Gestor de pedidos
-Crear un pedido de pizza desde cero implica configurar múltiples atributos. El patrón Prototype permite clonar un pedido base ya configurado en lugar de construir cada nuevo pedido de cero. `PedidoPizza` implementa el protocolo `PrototipoPizza` con el método `-clonar`, produciendo copias listas para usar sin repetir la inicialización.
+Crear un pedido de pizza desde cero implica configurar múltiples atributos. El patrón Prototype permite clonar un pedido base ya configurado en lugar de construir cada nuevo pedido de cero. `PedidoPizza` implementa el protocolo `PrototipoPizza` con el método `clonar`, produciendo copias listas para usar sin repetir la inicialización.
 
 ### Strategy — Calculadora intercambiable
 Una calculadora necesita poder cambiar de operación (suma, resta, etc.) en tiempo de ejecución sin modificar su código. El patrón Strategy define el protocolo `Operacion`, y `Calculadora` delega el cálculo a la estrategia asignada, permitiendo intercambiarla dinámicamente sin alterar la clase principal.
