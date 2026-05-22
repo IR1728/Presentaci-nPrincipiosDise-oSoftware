@@ -45,3 +45,56 @@ Una calculadora necesita poder cambiar de operación (suma, resta, etc.) en tiem
 ```bash
 pacman -Syu
 pacman -S mingw-w64-x86_64-clang mingw-w64-x86_64-gnustep-base
+
+## Ejecución en Windows
+
+### Requisitos
+
+- Windows 10/11
+- MSYS2
+- Clang
+- GNUstep Foundation
+
+---
+
+### 1. Instalar MSYS2
+
+Descargar desde:
+
+https://www.msys2.org/
+
+Abrir la terminal **MSYS2 MinGW x64**.
+
+---
+
+### 2. Instalar dependencias
+
+```bash
+pacman -Syu
+pacman -S mingw-w64-x86_64-clang mingw-w64-x86_64-gnustep-base
+```
+
+---
+
+### 3. Configurar GNUstep
+
+```bash
+source /mingw64/share/GNUstep/Makefiles/GNUstep.sh
+```
+
+---
+
+### 4. Compilar el proyecto
+
+```bash
+clang `gnustep-config --objc-flags` *.m -o app \
+`gnustep-config --base-libs`
+```
+
+---
+
+### 5. Ejecutar la aplicación
+
+```bash
+./app
+```
